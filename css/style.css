@@ -990,9 +990,9 @@ body{
 }
 
 .data-input-third{
-    padding: 0 0 60px 0;
-
     min-width: 550px;
+
+    resize: none;
 }
 
 .data-btn{
