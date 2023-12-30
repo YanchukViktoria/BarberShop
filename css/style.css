@@ -11,10 +11,6 @@
 html{
     scroll-behavior: smooth;
 
-    background-image: url("./css-img/bg/hero/hero-slider-first.jpg");
-    background-position: 65% 0%;
-    background-repeat: no-repeat;
-    background-size: 1073px 672px;
 }
 
 body{
@@ -28,7 +24,11 @@ body{
 }
                                     /* header */
 .header{
+    position: absolute;
+
     padding: 39px 0px 0px 0px;
+
+    width: 100%;
 }
 
 .header-wrap{
@@ -107,6 +107,10 @@ body{
 }
                                     /* hero */
 .section-hero{
+    background-image: url("./css-img/bg/hero/hero-slider-first.jpg");
+    background-position: 65% 0%;
+    background-repeat: no-repeat;
+    background-size: 1073px 672px;
 
     padding-top: 180px;
     padding-bottom: 6px;
@@ -936,6 +940,17 @@ body{
     max-height: 380px;
 }
                                     /* contacts */
+.section-form{
+    background-color: var(--main-dark);
+
+    padding-top: 130px;
+    padding-bottom: 130px;
+
+    position: absolute;
+
+    right: 666px;
+}
+
 .section-contacts{
     background-color: var(--main-dark);
     background-image: url("./css-img/bg/contacts-bg.png");
@@ -947,11 +962,6 @@ body{
 }
 
 /* -------------> */
-
-.contacts-data-wrap{
-    display: flex;
-    gap: 140px;
-}
 
 .data-title{
     font-family: Raleway;
@@ -994,6 +1004,11 @@ body{
 
     resize: none;
 }
+
+/* .data-input-third::placeholder:hover{
+    border-color: var(--title--svg-bg--br--nav);
+    color: var(--title--svg-bg--br--nav);
+} */
 
 .data-btn{
     font-size: 12px;
@@ -1104,6 +1119,11 @@ body{
     color: var(--contacts--narr-hero--price);
 }
 
+.contacts-wrap{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /* <------------- */
                                     /* footer */
 .footer{
@@ -1177,3 +1197,27 @@ body{
 }
 
 /* <------------- */
+
+/* .hero-bg-pel{
+    position: relative;
+
+}
+
+.hero-bg-absolut::before{
+    content: "";
+
+    position: absolute;
+
+    z-index: -1;
+
+    background-image: url("./css-img/bg/hero/hero-slider-first.jpg");
+
+    background-repeat: no-repeat;
+    background-size: 1073px 672px;
+
+    background-position-y: 700px;
+
+
+    width: 1073px;
+    height: 672px;
+} */
