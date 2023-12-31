@@ -984,18 +984,24 @@ body{
     margin-bottom: 44px;
 }
 
+.data-lable{
+    color: rgba(157, 164, 189, 0.4);
+
+     border-bottom: 1px solid var(--svg-color--title--narr--logo--panel--narr-about);
+
+     min-width: 260px;
+}
+
 .data-input{
     background-color: inherit;
-    border: inherit;
+    border: none;
      
     padding: 0 0 8px 0;
 
-    min-width: 260px;
-
-    border-bottom: 1px solid var(--svg-color--title--narr--logo--panel--narr-about);
+    color: var(--title--svg-bg--br--nav);
 }
 
-.data-input:hover{
+.data-lable:hover{
     border-color: var(--title--svg-bg--br--nav);
 }
 
@@ -1005,10 +1011,13 @@ body{
     resize: none;
 }
 
-/* .data-input-third::placeholder:hover{
-    border-color: var(--title--svg-bg--br--nav);
+.data-lable:focus-within{
     color: var(--title--svg-bg--br--nav);
-} */
+}
+
+.data-input:focus{
+    outline: none;
+}
 
 .data-btn{
     font-size: 12px;
